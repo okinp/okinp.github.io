@@ -1,0 +1,249 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: 'Metrophobic', Futura, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #505050;
+  text-decoration: none;
+  overflow-y: scroll;
+  _overflow-y: auto;
+}
+/*------HEADER------*/
+header {
+  display: inline;
+  float: left;
+  width: 940px;
+  margin: 0 10px;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #505050;
+  min-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header a {
+  text-decoration: none;
+  color: #505050;
+}
+header a h1 {
+  font-family: ‘Metrophobic’, Arial, serif;
+  font-weight: 400;
+  margin-bottom: 0%;
+}
+/*------NAVI------*/
+nav#menu {
+  display: inline;
+  width: 60px;
+  margin: 0 10px;
+  padding-top: 0;
+  padding-right: 3em;
+  min-height: 100%;
+  vertical-align: top;
+  float: left;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+}
+nav#menu li.active a:before {
+  content: "+";
+  display: block;
+  font-weight: 400;
+  left: -10px;
+  position: absolute;
+  top: 0;
+}
+nav#menu li.active a {
+  color: #050505;
+}
+nav a {
+  display: block;
+  position: relative;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: #505050;
+  float: left;
+}
+/*------CONTENT------*/
+main {
+  display: inline;
+  float: left;
+  width: 780px;
+  margin: 0 10px;
+}
+main a {
+  color: #4183c4;
+  text-decoration: none;
+}
+article {
+  display: block;
+  width: 819.9999999999999px;
+  margin: 0 -10px;
+  *zoom: 1;
+  margin-bottom: 5%;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+article.project aside {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin: 0 10px;
+  vertical-align: baseline;
+  font-size: 0.65rem;
+  margin-right: 0.2em;
+  padding-top: 0;
+}
+article.project section {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  margin-left: 0;
+  border-top: 1px solid #ccc;
+  padding-top: 0;
+}
+article.post {
+  display: block;
+  width: 820px;
+  margin: 0 -10px;
+  *zoom: 1;
+}
+article.post:before,
+article.post:after {
+  content: "";
+  display: table;
+}
+article.post:after {
+  clear: both;
+}
+article.post date {
+  font-size: 0.65rem;
+}
+article.post aside {
+  display: inline;
+  float: left;
+  width: 140px;
+  margin: 0 10px;
+  vertical-align: baseline;
+  font-size: 0.65rem;
+  margin-right: 0.2em;
+  padding-top: 0;
+}
+article.post section {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  margin-left: 0;
+  border-top: 1px solid #ccc;
+  padding-top: 0;
+}
+article.post-content {
+  border-top: 1px solid #ccc;
+}
+article.project-detail section {
+  display: inline;
+  float: left;
+  width: 780px;
+  margin: 0 10px;
+  margin-left: 0;
+  border-top: 1px solid #ccc;
+  padding-top: 0;
+}
+article section div.project_header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: auto;
+}
+.project_header .title {
+  font-size: 1em;
+  float: left;
+}
+.project_header .year {
+  float: right;
+}
+article.about {
+  border-top: 1px solid #ccc;
+}
+article.about p {
+  font-size: 0.8rem;
+}
+
+/*---Tags-------*/
+.taginfo p {
+  display: inline;
+  float: left;
+  vertical-align: baseline;
+  font-size: 0.8rem;
+  margin-right: 0.2em;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0;
+  width: 820px;
+}
+.tagcloud {
+  font-family: 'helvetica neue',helvetica,arial,sans-serif;
+    font-weight: 800;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: small-caps;
+  color: #505050;
+
+/*  font-family: 'Metrophobic', Futura, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+*/
+}
+/*--------MEDIA-----------*/
+div.oembed,
+div.video {
+  margin-bottom: 15px;
+}
+div.oembed,
+div.photo {
+  margin-bottom: 15px;
+}
+div.oembed,
+div.photo img {
+  max-width: 780px;
+  height: auto;
+}
+div.oembed,
+div.video iframe {
+  max-width: 780px;
+  max-height: 780px;
+}
